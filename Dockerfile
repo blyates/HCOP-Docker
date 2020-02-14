@@ -3,6 +3,8 @@ MAINTAINER Beth Yates <byates@ebi.ac.uk>
 
 COPY build.sh /
 
+RUN chmod +x /src/build.sh
+
 RUN /build.sh
 
 ENV PATH $PATH:/home/src/ensembl-perl/ensembl-hive/scripts
