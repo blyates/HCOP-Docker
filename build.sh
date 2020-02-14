@@ -1,14 +1,9 @@
-FROM centos:6
-MAINTAINER Beth Yates <byates@ebi.ac.uk>
+#!/bin/bash
 
-COPY build.sh /
-
-RUN /build.sh
-
-ENV PATH $PATH:/home/src/ensembl-perl/ensembl-hive/scripts
-ENV PERL5LIB ${PERL5LIB}:/home/pipeline/Genefam/modules
-ENV PERL5LIB ${PERL5LIB}:/home/pipeline/HCOP/modules
-ENV PERL5LIB ${PERL5LIB}:/home/src/ensembl-perl/ensembl/modules
-ENV PERL5LIB ${PERL5LIB}:/home/src/ensembl-perl/ensembl-hive/modules
-
-WORKDIR /home/pipeline/
+yum -y update && yum clean all;
+yum -y install wget
+yum -y install tar
+yum -y install gcc
+yum -y install zlib-devel
+yum -y install sudo
+yum -y install git
