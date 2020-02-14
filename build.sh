@@ -47,6 +47,6 @@ cd ../;
 git clone https://github.com/Ensembl/ensembl-hive.git;
 cd ensembl-hive;
 git fetch
-cpanm --installdeps .
+cpanm --installdeps --with-recommends .
 cd ../;
 ls -al;
