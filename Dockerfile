@@ -3,7 +3,7 @@ MAINTAINER Beth Yates <byates@ebi.ac.uk>
 
 COPY build.sh /
 
-RUN chmod +x /src/build.sh
+RUN chmod +x /build.sh
 
 RUN /build.sh
 
