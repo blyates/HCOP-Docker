@@ -8,6 +8,8 @@ yum -y install zlib-devel
 yum -y install sudo
 yum -y install git
 
+yum -y install perl-CPAN
+curl -L http://cpanmin.us | perl - App::cpanminus
 
 wget https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
 rpm -ivh mysql80-community-release-el7-3.noarch.rpm
